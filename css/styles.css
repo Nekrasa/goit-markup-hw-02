@@ -3,9 +3,16 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-button-white-color: #ffffff;
+  --title-bgn-color: #2f303a;
+  --title-link-color: rgba(255, 255, 255, 0.6);
+  --button-color: #f5f4fa;
+  --primary-bgr-portfolio-color: #e5e5e5;
+  --secondary-bgr-color: #f5f4fa;
 }
 
 body {
+  font-weight: 700;
+  font-size: 16px;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
 }
@@ -17,9 +24,8 @@ body {
 }
 .logo {
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
-  line-height: 0.03;
+  line-height: 1.2;
   color: var(--title-text-color);
 }
 .logo-text {
@@ -29,7 +35,7 @@ body {
 .auth-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 0.02;
+  line-height: 1.1;
   color: var(--title-text-color);
 }
 .section-list {
@@ -37,6 +43,12 @@ body {
 }
 .auth-nav {
   color: var(--primary-text-color);
+}
+.site-nav-list,
+.auth-nav,
+.logo,
+.link {
+  text-decoration: none;
 }
 
 .site-nav-list:focus,
@@ -53,7 +65,7 @@ body {
 .site-header {
   width: 1600px;
   height: 600px;
-  background: #2f303a;
+  background-color: var(--title-bgn-color);
 }
 .site-header-text {
   font-weight: 900;
@@ -66,8 +78,6 @@ body {
 .button {
   color: var(--primary-button-white-color);
   background-color: var(--accent-text-color);
-  font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
@@ -77,8 +87,10 @@ body {
 
 /*Особенности*/
 
+.section-title {
+  background-color: var(--primary-bgr-portfolio-color);
+}
 .section-item {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
@@ -89,47 +101,46 @@ body {
   line-height: 1.71;
 }
 .list {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
 /*Наша команда*/
+
+.subtitle {
+  background-color: var(--button-color);
+}
 .section-items {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
 }
 .section-content {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.19;
 }
 /*Портфолио*/
 
 .section-button {
+  background: var(--primary-bgr-portfolio-color);
 }
 .portfolio-name {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
 }
 .portfolio-text {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.87;
 }
 .button-primary {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
   color: var(--title-text-color);
-  background: #f5f4fa;
+  background-color: var(--button-color);
 }
 .button-primary:focus,
 .button-primary:hover {
@@ -142,9 +153,8 @@ body {
 .page-footer {
   width: 1600px;
   height: 252px;
-  left: 0px;
   top: 2097px;
-  background: #2f303a;
+  background-color: var(--title-bgn-color);
 }
 .logo-link {
   color: var(--primary-button-white-color);
@@ -156,9 +166,9 @@ body {
   list-style: none;
 }
 .link {
-  color: var(--primary-button-white-color);
+  color: var(--title-link-color);
 }
-
-.item {
-  color: rgba(255, 255, 255, 0.6);
+.link:hover,
+.link:focus {
+  color: var(--primary-button-white-color);
 }
